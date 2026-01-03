@@ -110,15 +110,14 @@ export default function LandingClient() {
     <div ref={scope} data-page="landing" >
       <Hero bgSrc="/heropl.jpg" />
 
-      <Separator className="border-[var(--jungle)]/20" />
 
       <FeaturedMenu items={featured} />
 
-      <Separator className="border-[var(--jungle)]/20" />
+      {/* <Separator className="border-[var(--jungle)]/20" /> */}
 
       <Reviews reviews={reviews} />
 
-      <Separator className="border-[var(--jungle)]/20" />
+      {/* <Separator className="border-[var(--jungle)]/20" /> */}
 
       <Faq />
     </div>

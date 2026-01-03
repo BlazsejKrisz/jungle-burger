@@ -1,18 +1,13 @@
-// components/footer.tsx
 import Link from "next/link";
-import Image from "next/image";
 
-export default function Footer({ logoSrc = "/jungle-logo.png" }: { logoSrc?: string }) {
+export default function Footer() {
   return (
-    <footer className="border-t border-[var(--jungle)]/25">
+    <footer className="border-t border-border bg-card/40 backdrop-blur">
       <div className="mx-auto w-full max-w-6xl px-4 py-10 text-sm text-muted-foreground sm:px-6">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <div className="flex items-center gap-3">
-            
-            <div className="text-xs">
-              <div className="text-foreground">Jungle Burger</div>
-              <div>© {new Date().getFullYear()} • Minden jog fenntartva</div>
-            </div>
+          <div className="text-xs">
+            <div className="text-foreground">Jungle Burger</div>
+            <div>© {new Date().getFullYear()} • Minden jog fenntartva</div>
           </div>
 
           <div className="flex flex-wrap gap-3 text-xs">

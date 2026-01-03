@@ -47,7 +47,7 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
           {/* CTA — ONE LINE on mobile */}
           <div data-anim="hero-cta" className="mt-6 flex flex-row gap-3">
             <Button asChild className="flex-1 rounded-xl">
-              <Link href="/menu">
+              <Link href="/menu" className="text-white">
                 Menü megnyitása <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -57,7 +57,7 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
               variant="outline"
               className="flex-1 rounded-xl border-[var(--jungle)]/55 bg-background/10 text-white hover:bg-background/20"
             >
-              <Link href="/rolunk">Rólunk</Link>
+              <Link href="/rolunk">Házhozszállítás</Link>
             </Button>
           </div>
 
@@ -71,20 +71,20 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
                 <Clock3 className="h-4 w-4 shrink-0" />
                 <span className="truncate">Nyitvatartás</span>
               </div>
-              <div className="mt-1 text-xs truncate">H–V 11:00–22:00</div>
+              <div className="mt-1 text-xs truncate">H–V 11:00–20:00</div>
             </div>
 
             <div className="min-w-0 rounded-3xl bg-[var(--jungle)] p-4 text-white">
               <div className="flex items-center gap-2 text-sm font-semibold">
                 <MapPin className="h-4 w-4 shrink-0" />
-                <span className="truncate">Helyszín</span>
+                <span className="truncate">1165 Budapest</span>
               </div>
-              <div className="mt-1 text-xs truncate">Budapest</div>
+              <div className="mt-1 text-xs truncate">Bökényföldi út 6</div>
             </div>
 
             <div className="min-w-0 rounded-3xl bg-[var(--jungle)] p-4 text-white">
-              <div className="text-sm font-semibold truncate">Valami még ide</div>
-              <div className="mt-1 text-xs truncate">talán socialek</div>
+              <div className="text-sm font-semibold truncate">Kapcsolat</div>
+              <div className="mt-1 text-xs truncate">+36705909421</div>
             </div>
           </div>
         </div>

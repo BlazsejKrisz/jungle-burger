@@ -1,4 +1,3 @@
-// components/menu-card.tsx
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,23 +11,18 @@ function Ft({ value }: { value: number }) {
 
 export default function MenuCard({ item }: { item: MenuItem }) {
   return (
-    <Card className="group overflow-hidden rounded-3xl border-3 border-[var(--jungle)] ">
-      {/* IMAGE AREA – absolutely no padding/margin, flush to card edges */}
+    <Card className="group overflow-hidden rounded-3xl border-3 border-border bg-card text-card-foreground backdrop-blur">
+      {/* IMAGE AREA */}
       <div className="relative h-52 w-full">
-        {/* ✅ This wrapper scales (image + overlay together) */}
+        {/* scale wrapper */}
         <div className="absolute inset-0 transition-transform duration-300 group-hover:scale-[1.04]">
-          <Image
-            src={item.imageSrc}
-            alt={`${item.name} kép`}
-            fill
-            className="object-cover"
-          />
+          <Image src={item.imageSrc} alt={`${item.name} kép`} fill className="object-cover" />
 
-          {/* ✅ Overlay is inside the scaling wrapper, so it zooms too */}
+          {/* overlay */}
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
         </div>
 
-        {/* Badges & price should NOT scale -> keep them outside the scaling wrapper */}
+        {/* Badge (doesn't scale) */}
         <div className="absolute bottom-3 left-3 z-10">
           {item.badge ? (
             <Badge variant="secondary" className="rounded-xl">
@@ -37,7 +31,8 @@ export default function MenuCard({ item }: { item: MenuItem }) {
           ) : null}
         </div>
 
-        <div className="absolute bottom-3 right-3 z-10 rounded-2xl border border-[var(--jungle)] bg-white/90 px-3 py-1 text-sm font-semibold text-[var(--jungle)] backdrop-blur">
+        {/* Price (token-based, no white pill) */}
+        <div className="absolute bottom-3 right-3 z-10 rounded-2xl border border-border bg-card/80 px-3 py-1 text-sm font-semibold text-foreground backdrop-blur">
           <Ft value={item.price} />
         </div>
       </div>
@@ -60,9 +55,9 @@ export default function MenuCard({ item }: { item: MenuItem }) {
                 <span
                   key={a}
                   title={meta.label}
-                  className="inline-flex h-8 w-8 items-center justify-center rounded-2xl border border-[var(--jungle)]/35 bg-background text-[var(--jungle)]"
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-2xl border border-border bg-card/70 text-foreground backdrop-blur"
                 >
-                  <Icon className="h-4 w-4" />
+                  <Icon className="h-4 w-4 text-[var(--jungle)]" />
                 </span>
               );
             })}
