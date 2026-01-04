@@ -1,13 +1,13 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-import { ContactThanksEmail } from "@/emails/contact-thanks";
-import { ContactStoreEmail } from "@/emails/contact-store";
+import { ContactThanksEmail } from "@/lib/emails/contact-thanks";
+import { ContactStoreEmail } from "@/lib/emails/contact-store";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const FROM = "Jungle Burger <kapcsolat@jungleburger.hu>";
-const TO = "kapcsolat@jungleburger.hu";
+const FROM = "Jungle Burger <info@jungleburger.hu>";
+const TO = "info@jungleburger.hu";
 
 export async function POST(req: Request) {
   const { name, email, message } = await req.json();

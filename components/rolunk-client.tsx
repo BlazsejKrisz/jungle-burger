@@ -17,7 +17,7 @@ export default function AboutPageContent() {
 
       <div className="grid gap-6 lg:grid-cols-2">
         {/* TEXT */}
-        <Card className="rounded-3xl border bg-card">
+        <Card className="rounded-3xl border-3 bg-card">
           <CardHeader>
             <CardTitle className="text-base">A koncepció</CardTitle>
           </CardHeader>
@@ -38,13 +38,13 @@ export default function AboutPageContent() {
 
         {/* IMAGES */}
         <div className="grid gap-6">
-          <Card className="overflow-hidden rounded-3xl border bg-card">
+          <Card className="overflow-hidden rounded-3xl border-3 bg-card">
             <div className="relative h-56 w-full">
               <Image src="/burger-image.jpg" alt="Jungle Burger kép 1" fill className="object-cover" />
             </div>
           </Card>
 
-          <Card className="overflow-hidden rounded-3xl border bg-card">
+          <Card className="overflow-hidden rounded-3xl border-3 bg-card">
             <div className="relative h-56 w-full">
               <Image src="/heropl.jpg" alt="Jungle Burger kép 2" fill className="object-cover" />
             </div>
@@ -53,7 +53,7 @@ export default function AboutPageContent() {
       </div>
 
       {/* MAP */}
-      <Card className="mt-8 overflow-hidden rounded-3xl border bg-card">
+      <Card className="mt-8 overflow-hidden rounded-3xl border-3 bg-card">
         <div className="p-4">
           <div className="text-sm font-semibold">Hol találsz minket</div>
           <div className="mt-1 text-xs text-muted-foreground">
