@@ -149,7 +149,7 @@ export default function Navbar({
               <a href="tel:+36705909421"><Phone className="h-5 w-5" /> Hívj minket!</a>
             </Button>
 
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </nav>
         </div>
       </div>

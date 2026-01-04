@@ -35,10 +35,10 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
       {/* Content */}
       <div className="relative isolate mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-6xl items-center px-4 py-10 sm:px-6">
         <div className="max-w-2xl">
-          <h1 data-anim="hero-title" className="mt-5 text-4xl font-semibold tracking-tight text-white sm:text-6xl">
+          <h1 data-anim="hero-title" className="md:mt-5 text-5xl font-semibold tracking-tight text-white md:text-6xl">
             Jungle Burger.
             <br />
-            <span className="text-[var(--jungle)]">Nagy ízek, tiszta döntés.</span>
+            <span className="text-[var(--jungle)] text-4xl md:text-6xl">Nagy ízek, tiszta döntés.</span>
           </h1>
 
           <p data-anim="hero-sub" className="mt-4 max-w-xl text-sm text-white/80">
