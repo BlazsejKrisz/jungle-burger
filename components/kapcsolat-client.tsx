@@ -11,7 +11,7 @@ import { Textarea } from "@/components/ui/textarea";
 const PLACE = {
   name: "Jungle Burger",
   phone: "+36 70 590 9421",
-  email: "kapcsolat@jungleburger.hu",
+  email: "info@jungleburger.hu",
   address: "1165 Budapest, Bökényföldi út 6",
   hours: "H–V 11:00–20:00",
   mapQuery: "1165 Budapest Bökényföldi út 6",
