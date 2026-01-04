@@ -20,10 +20,11 @@ export const JUNGLE_HEX = "#16a34a";
 export const NAV_LEFT: NavItem[] = [
   { href: "/", label: "Kezdőlap" },
   { href: "/menu", label: "Menü" },
+  { href: "/rolunk", label: "Rólunk" },
 ];
 
 export const NAV_RIGHT: NavItem[] = [
-  { href: "/rolunk", label: "Rólunk" },
+  
   { href: "/kapcsolat", label: "Kapcsolat" },
 ];
 

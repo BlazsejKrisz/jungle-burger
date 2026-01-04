@@ -1,11 +1,5 @@
-import React from 'react'
+import ContactPage from "@/components/kapcsolat-client";
 
-const page = () => {
-  return (
-    <div>
-      a
-    </div>
-  )
+export default function Page() {
+  return <ContactPage />;
 }
-
-export default page

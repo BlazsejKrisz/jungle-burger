@@ -1,11 +1,6 @@
-import React from 'react'
+import AboutPage from "@/components/rolunk-client";
 
-const page = () => {
-  return (
-    <div>
-      a
-    </div>
-  )
+export default function Page() {
+  return <AboutPage />;
 }
 
-export default page
