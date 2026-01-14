@@ -18,12 +18,12 @@ export default function MenuSection({
       {/* Section header (like the reference orange bars, but jungle style) */}
       <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <div className="text-sm md:text-xl font-semibold tracking-wide text-[var(--jungle)]">
+          <div className="text-md md:text-xl font-semibold tracking-wide text-[var(--jungle)]">
             {title}
           </div>
-          {subtitle ? (
+          {/* {subtitle ? (
             <div className="mt-1 text-xs md:text-md text-muted-foreground">{subtitle}</div>
-          ) : null}
+          ) : null} */}
         </div>
 
       </div>
