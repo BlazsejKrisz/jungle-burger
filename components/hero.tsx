@@ -74,6 +74,7 @@ export default function Hero({ bgSrc = "https://aehgjym3dpgi0paj.public.blob.ver
               href="https://www.instagram.com/jungleburger16?igsh=MTNsYmhkcXV3N3M1cw=="
               aria-label="Instagram"
               className="transition hover:text-[var(--jungle)]"
+              target="_blank"
             >
               <Instagram className="h-5 w-5" />
             </a>
@@ -81,6 +82,7 @@ export default function Hero({ bgSrc = "https://aehgjym3dpgi0paj.public.blob.ver
               href="https://www.facebook.com/share/1C2FoSdBR1/?mibextid=wwXIfr"
               aria-label="Facebook"
               className="transition hover:text-[var(--jungle)]"
+              target="_blank"
             >
               <Facebook className="h-5 w-5" />
             </a>
