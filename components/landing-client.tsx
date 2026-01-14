@@ -108,7 +108,7 @@ export default function LandingClient() {
 
   return (
     <div ref={scope} data-page="landing" >
-      <Hero bgSrc="/heropl.jpg" />
+      <Hero bgSrc="https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglehero.jpeg" />
 
 
       <FeaturedMenu items={featured} />

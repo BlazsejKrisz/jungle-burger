@@ -19,7 +19,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
+export default function Hero({ bgSrc = "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglehero.jpeg" }: { bgSrc?: string }) {
   return (
     <section
       data-anim="hero"
@@ -31,15 +31,16 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
         fill
         priority
         className="object-cover"
+        unoptimized
       />
 
       {/* Overlays */}
-      <div className="absolute inset-0 bg-black/65" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(22,163,74,0.28),transparent_55%)]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/80" />
+       <div className="absolute inset-0 bg-black/65" />
+       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(22,163,74,0.28),transparent_55%)]" />
+       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/80" /> 
 
       {/* Texture */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.12] [background-image:linear-gradient(to_right,rgba(255,255,255,0.18)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.18)_1px,transparent_1px)] [background-size:64px_64px]" />
+      {/* <div className="pointer-events-none absolute inset-0 opacity-[0.12] [background-image:linear-gradient(to_right,rgba(255,255,255,0.18)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.18)_1px,transparent_1px)] [background-size:64px_64px]" /> */}
 
       {/* Content */}
       <div className="relative isolate mx-auto flex min-h-[calc(100dvh-4rem)] w-full max-w-6xl items-start md:items-center px-4 pt-16 md:pt-8 pb-10 sm:px-6">

@@ -37,19 +37,44 @@ export default function Faq() {
                 <AccordionItem value="a1">
                   <AccordionTrigger>Van vegetáriánus opció?</AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Igen, a Veggie Green fix opció. A menü később bővíthető.
+                    Igen — van veggie burgerünk is.
                   </AccordionContent>
                 </AccordionItem>
+
                 <AccordionItem value="a2">
-                  <AccordionTrigger>Mennyire csípős a Jungle szósz?</AccordionTrigger>
+                  <AccordionTrigger>Van parkolás a közelben?</AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Enyhén pikáns, inkább krémes és karakteres.
+                    Igen, a környéken általában lehet parkolni.
                   </AccordionContent>
                 </AccordionItem>
+
                 <AccordionItem value="a3">
-                  <AccordionTrigger>Van rendelés a site-on?</AccordionTrigger>
+                  <AccordionTrigger>Elfogadtok SZÉP-kártyát?</AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Nem — ez egy landing + menü oldal. Később lehet linkelni külső platformra, ha kell.
+                    Igen, SZÉP-kártyával is tudsz fizetni.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="a4">
+                  <AccordionTrigger>
+                    Hozhatok magammal kisállatot?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Igen, kisállatbarát hely vagyunk.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="a5">
+                  <AccordionTrigger>Kell asztalt foglalni?</AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Nem szükséges asztalt foglalni.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="a6">
+                  <AccordionTrigger>Van házhozszállítás?</AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    Hamarosan elérhető lesz.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -69,7 +94,8 @@ export default function Faq() {
                 Nézd meg a menüt — és válassz kedvencet.
               </h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Kattints, nézelődj, inspirálódj. Ez a site a hangulatról és az ajánlatról szól.
+                Kattints, nézelődj, inspirálódj. Ez a site a hangulatról és az
+                ajánlatról szól.
               </p>
 
               {/* CTA BUTTONS */}
@@ -143,15 +169,17 @@ export default function Faq() {
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 <div className="rounded-3xl border border-border bg-card/70 p-4 backdrop-blur">
                   <div className="text-sm font-semibold">Nyitvatartás</div>
-                  <div className="mt-1 text-xs text-muted-foreground">H–V 11:30–20:00</div>
+                  <div className="mt-1 text-xs text-muted-foreground">
+                    H–V 11:30–20:00
+                  </div>
                 </div>
                 <div className="rounded-3xl border border-border bg-card/70 p-4 backdrop-blur">
                   <div className="text-sm font-semibold">Helyszín</div>
-                  <div className="mt-1 text-xs text-muted-foreground">1165 Budapest</div>
+                  <div className="mt-1 text-xs text-muted-foreground">
+                    1165 Budapest
+                  </div>
                 </div>
               </div>
-
-              
             </div>
           </div>
         </div>
@@ -160,7 +188,9 @@ export default function Faq() {
         <Card className="mt-24 overflow-hidden rounded-3xl border-3 border-border bg-card">
           <div className="p-4">
             <div className="text-sm font-semibold">Hol találsz minket</div>
-            <div className="mt-1 text-xs text-muted-foreground">{PLACE.address}</div>
+            <div className="mt-1 text-xs text-muted-foreground">
+              {PLACE.address}
+            </div>
           </div>
 
           <div className="relative h-[320px] w-full sm:h-[380px]">
