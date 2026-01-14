@@ -53,7 +53,7 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
             Jungle Burger.
             <br />
             <span className="text-[var(--jungle)] text-4xl md:text-6xl">
-             Itt a dzsungel ízei az urak
+             Itt a dzsungel ízei uralkodnak
             </span>
           </h1>
 
