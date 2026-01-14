@@ -78,7 +78,7 @@ export default function Navbar({
                     </Link>
                   ))}
 
-                  <div className="mt-6 rounded-2xl border border-border bg-card/60 p-4 text-xs text-muted-foreground backdrop-blur">
+                  {/* <div className="mt-6 rounded-2xl border border-border bg-card/60 p-4 text-xs text-muted-foreground backdrop-blur">
                     <div className="flex items-center gap-2 text-foreground">
                       <Sparkles className="h-4 w-4 text-[var(--jungle)]" />
                       <span className="font-semibold">Jungle Burger</span>
@@ -87,8 +87,8 @@ export default function Navbar({
                       Street-food landing •{" "}
                       <span className="text-foreground">menü & vibe</span>
                     </div>
-                  </div>
-                </div>
+                  </div>*/}
+                </div> 
               </SheetContent>
             </Sheet>
           </div>

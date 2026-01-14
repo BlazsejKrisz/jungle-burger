@@ -17,8 +17,9 @@ export default function Footer() {
             <Link className="hover:text-foreground" href="/menu">
               Menü
             </Link>
-            <span className="opacity-60">Adatvédelem</span>
-            <span className="opacity-60">ÁSZF</span>
+             <Link className="hover:text-foreground" href="/kapcsolat">
+              Kapcsolat
+            </Link>
           </div>
         </div>
       </div>

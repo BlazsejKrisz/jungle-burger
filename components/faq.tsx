@@ -206,9 +206,9 @@ export default function Faq() {
           </div>
         </Card>
 
-        <p className="mt-10 text-center text-xs text-muted-foreground">
+        {/* <p className="mt-10 text-center text-xs text-muted-foreground">
           Jungle Burger • modern street-food • Budapest
-        </p>
+        </p> */}
       </div>
     </section>
   );

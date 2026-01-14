@@ -62,9 +62,7 @@ export default function AboutPageContent() {
       <Card className="mt-8 overflow-hidden rounded-3xl border-3 bg-card">
         <div className="p-4">
           <div className="text-sm font-semibold">Hol találsz minket</div>
-          <div className="mt-1 text-xs text-muted-foreground">
-            (placeholder — cseréld majd pontos címre)
-          </div>
+          
         </div>
 
         <div className="relative h-[360px] w-full">
@@ -78,9 +76,9 @@ export default function AboutPageContent() {
         </div>
       </Card>
 
-      <p className="mt-10 text-center text-xs text-muted-foreground">
+      {/* <p className="mt-10 text-center text-xs text-muted-foreground">
         Jungle Burger • modern street-food • Budapest
-      </p>
+      </p> */}
     </section>
   );
 }
