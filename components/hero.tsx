@@ -71,14 +71,14 @@ export default function Hero({ bgSrc = "https://aehgjym3dpgi0paj.public.blob.ver
             className="mt-6 flex items-center gap-4 text-white"
           >
             <a
-              href="#"
+              href="https://www.instagram.com/jungleburger16?igsh=MTNsYmhkcXV3N3M1cw=="
               aria-label="Instagram"
               className="transition hover:text-[var(--jungle)]"
             >
               <Instagram className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.facebook.com/share/1C2FoSdBR1/?mibextid=wwXIfr"
               aria-label="Facebook"
               className="transition hover:text-[var(--jungle)]"
             >

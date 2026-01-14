@@ -227,7 +227,7 @@ export const MENU_GROUPS: MenuGroup[] = [
             name: "Jungle Vega Tál",
             desc: "Jungle szósz, salátakeverék, 2 grillezett kecskesajt, édesburgonya",
             price: 3890,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglevega%20%E2%80%93%20nagy.jpeg",
+            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/kecsketal%20%E2%80%93%20nagy.jpeg",
             allergens: ["milk", "egg", "mustard"],
           },
         ],

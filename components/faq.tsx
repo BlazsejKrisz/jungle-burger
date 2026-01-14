@@ -37,14 +37,14 @@ export default function Faq() {
                 <AccordionItem value="a1">
                   <AccordionTrigger>Van vegetáriánus opció?</AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Igen — van veggie burgerünk is.
+                    Igen — van tálunk is és hamburgerünk is.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="a2">
                   <AccordionTrigger>Van parkolás a közelben?</AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Igen, a környéken általában lehet parkolni.
+                    Igen, az üzlet közelében sok szabad parkolóhely van.
                   </AccordionContent>
                 </AccordionItem>
 
