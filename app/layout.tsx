@@ -20,7 +20,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Jungle Burger Budapest",
-  description: "Finom hamburger, ide még kitaláljuk",
+  description: "Jungle Burger Budapest – smash és klasszikus burgerek, hotdogok és tálak friss alapanyagokból. Laza hangulat, őszinte ízek a XVI. kerületben."
+,
 };
 
 export default function RootLayout({
