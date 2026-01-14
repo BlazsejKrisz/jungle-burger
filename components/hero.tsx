@@ -8,8 +8,6 @@ import {
   MapPin,
   Instagram,
   Facebook,
-  X,
-  TicketCheckIcon,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -25,7 +23,7 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
   return (
     <section
       data-anim="hero"
-      className="relative min-h-[calc(100vh-4rem)] w-full overflow-hidden"
+      className="relative min-h-[calc(100dvh-4rem)] w-full overflow-x-hidden"
     >
       <Image
         src={bgSrc}
@@ -44,23 +42,26 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
       <div className="pointer-events-none absolute inset-0 opacity-[0.12] [background-image:linear-gradient(to_right,rgba(255,255,255,0.18)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.18)_1px,transparent_1px)] [background-size:64px_64px]" />
 
       {/* Content */}
-      <div className="relative isolate mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-6xl items-center px-4 py-10 sm:px-6">
+      <div className="relative isolate mx-auto flex min-h-[calc(100dvh-4rem)] w-full max-w-6xl items-start md:items-center px-4 pt-16 md:pt-8 pb-10 sm:px-6">
         <div className="max-w-2xl">
           <h1
             data-anim="hero-title"
-            className="md:mt-5 text-5xl font-semibold tracking-tight text-white md:text-6xl"
+            className="md:mt-5 text-4xl font-semibold tracking-tight text-white md:text-6xl md:pb-4"
           >
             Jungle Burger.
             <br />
-            <span className="text-[var(--jungle)] text-4xl md:text-6xl">
-             Itt a dzsungel ízei uralkodnak
+            <span className="text-[var(--jungle)] text-2xl md:text-5xl">
+              Itt a dzsungel ízei uralkodnak
             </span>
           </h1>
 
-          <p data-anim="hero-sub" className="mt-4 max-w-xl text-sm text-white/80">
-           Smash burger, classic burger, crispy chicken, veggie — pár bevált kedvenc,
-  amit jó választani és még jobb megenni. 
-  Nincs túlbonyolítva. Csak az, ami működik. Budapesten
+          <p
+            data-anim="hero-sub"
+            className="mt-4 max-w-xl text-sm leading-relaxed text-white/80"
+          >
+            Smash burger, classic burger, crispy chicken, veggie — pár bevált
+            kedvenc, amit jó választani és még jobb megenni. Nincs túlbonyolítva.
+            Csak az, ami működik. Budapesten.
           </p>
 
           {/* SOCIALS */}
@@ -82,15 +83,17 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
             >
               <Facebook className="h-5 w-5" />
             </a>
-            
           </div>
 
           {/* CTA */}
-          <div data-anim="hero-cta" className="mt-8 flex flex-row gap-4">
+          <div
+            data-anim="hero-cta"
+            className="mt-8 flex flex-col gap-4 sm:flex-row"
+          >
             <Button
               asChild
               size="lg"
-              className="flex-1 h-14 rounded-2xl text-base text-white"
+              className="h-14 rounded-2xl text-base text-white"
             >
               <Link href="/menu">
                 Menü megnyitása <ArrowRight className="ml-2 h-5 w-5" />
@@ -102,7 +105,7 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="flex-1 h-14 rounded-2xl border-[var(--jungle)]/55 bg-background/10 text-base text-white hover:bg-background/20 cursor-pointer"
+                  className="h-14 rounded-2xl border-[var(--jungle)]/55 bg-background/10 text-base text-white hover:bg-background/20 cursor-pointer"
                 >
                   Házhozszállítás
                 </Button>
@@ -160,7 +163,9 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
                 <MapPin className="h-4 w-4 shrink-0" />
                 <span className="truncate">1165 Budapest</span>
               </div>
-              <div className="mt-1 text-xs truncate">Bökényföldi út 6</div>
+              <div className="mt-1 text-xs truncate">
+                Bökényföldi út 6
+              </div>
             </div>
 
             <div className="hidden sm:grid min-w-0 rounded-3xl bg-[var(--jungle)] p-4 text-white">

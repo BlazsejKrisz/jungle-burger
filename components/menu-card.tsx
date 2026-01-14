@@ -11,36 +11,43 @@ function Ft({ value }: { value: number }) {
   return <span>{value.toLocaleString("hu-HU")} Ft</span>;
 }
 
-export default function MenuCard({ item, className }: { item: MenuItem; className?: string; }) {
+export default function MenuCard({
+  item,
+  className,
+}: {
+  item: MenuItem;
+  className?: string;
+}) {
   const hasImage = Boolean(item.imageSrc);
 
   return (
     <Card
       className={cn(
         hasImage
-          ? "group overflow-hidden rounded-3xl border-3 border-border bg-card text-card-foreground py-0 gap-0 min-h-[360px]"
+          ? "group overflow-hidden rounded-3xl border-3 border-border bg-card text-card-foreground py-0 gap-0 min-h-[360px] md:min-h-[360px]"
           : "group overflow-hidden rounded-3xl border-3 border-border bg-card text-card-foreground",
-  className)}
+        className
+      )}
     >
       {hasImage ? (
         <div className="flex flex-1">
           {/* LEFT: TEXT */}
-          <div className="flex flex-1 flex-col px-6 py-5">
+          <div className="flex flex-1 flex-col px-6 py-5 pt-8">
             <div className="min-w-0">
               <div className="text-lg font-semibold leading-snug">
                 {item.name}
               </div>
-
+{/* 
               {item.badge ? (
                 <div className="mt-2">
                   <Badge variant="secondary" className="rounded-xl">
                     {item.badge}
                   </Badge>
                 </div>
-              ) : null}
+              ) : null} */}
 
               {item.desc ? (
-                <div className="mt-3 text-sm text-muted-foreground">
+                <div className="mt-8 text-sm text-muted-foreground">
                   {item.desc}
                 </div>
               ) : null}
@@ -48,7 +55,7 @@ export default function MenuCard({ item, className }: { item: MenuItem; classNam
 
             {/* Allergens */}
             {item.allergens?.length ? (
-              <div className="mt-auto flex flex-wrap items-center gap-2 pt-4">
+              <div className="mt-auto flex flex-wrap items-center gap-2 pt-5">
                 {item.allergens.map((a) => {
                   const meta = ALLERGENS[a];
                   if (!meta) return null;
@@ -58,7 +65,7 @@ export default function MenuCard({ item, className }: { item: MenuItem; classNam
                     <span
                       key={a}
                       title={meta.label}
-                      className="inline-flex h-8 w-8 items-center justify-center rounded-2xl border border-border bg-card/70"
+                      className="inline-flex h-6 w-6 md:h-8 md:w-8 items-center justify-center rounded-2xl border border-border bg-card/70"
                     >
                       <Icon className="h-4 w-4 text-[var(--jungle)]" />
                     </span>
@@ -115,6 +122,3 @@ export default function MenuCard({ item, className }: { item: MenuItem; classNam
     </Card>
   );
 }
-
-
-
