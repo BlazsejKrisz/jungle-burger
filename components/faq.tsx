@@ -109,13 +109,14 @@ export default function Faq() {
                         asChild
                         size="lg"
                         className="rounded-2xl text-base font-semibold"
+                        disabled
                       >
                         <a
                           href="https://wolt.com"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          Wolt (placeholder)
+                          Wolt (Hamarosan!)
                         </a>
                       </Button>
 
@@ -124,13 +125,14 @@ export default function Faq() {
                         size="lg"
                         variant="outline"
                         className="rounded-2xl text-base font-semibold"
+                        disabled
                       >
                         <a
                           href="https://foodora.hu"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          Foodora (placeholder)
+                          Foodora (Hamarosan!)
                         </a>
                       </Button>
                     </div>
@@ -141,7 +143,7 @@ export default function Faq() {
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 <div className="rounded-3xl border border-border bg-card/70 p-4 backdrop-blur">
                   <div className="text-sm font-semibold">Nyitvatartás</div>
-                  <div className="mt-1 text-xs text-muted-foreground">H–V 11:00–20:00</div>
+                  <div className="mt-1 text-xs text-muted-foreground">H–V 11:30–20:00</div>
                 </div>
                 <div className="rounded-3xl border border-border bg-card/70 p-4 backdrop-blur">
                   <div className="text-sm font-semibold">Helyszín</div>

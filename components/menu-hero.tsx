@@ -12,7 +12,7 @@ export default function MenuHero() {
         {/* background image */}
         <div className="relative h-44 w-full sm:h-52">
           <Image
-            src="/burger-image.jpg" // swap to a real menu hero image
+            src="https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglesmash%20%E2%80%93%20nagy.jpeg" // swap to a real menu hero image
             alt="Étlap / Menü"
             fill
             className="object-cover"
@@ -29,13 +29,13 @@ export default function MenuHero() {
             </h1>
             <div className="mt-3 flex items-center gap-3">
               <Badge className="bg-[var(--jungle)] text-white">Signature</Badge>
-              <Button
+              {/* <Button
                 asChild
                 variant="outline"
                 className="h-9 rounded-xl border bg-white/10 text-white hover:bg-white/15"
               >
                 <Link href="#smash">Ugrás a burgerekhez</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

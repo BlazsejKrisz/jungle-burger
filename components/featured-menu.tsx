@@ -26,7 +26,7 @@ function toMenuItem(item: FeaturedItem): MenuItem {
 export default function FeaturedMenu({ items }: { items: FeaturedItem[] }) {
   return (
     <section data-anim="section" className="py-14">
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight">
@@ -62,9 +62,9 @@ export default function FeaturedMenu({ items }: { items: FeaturedItem[] }) {
                 </p>
 
                 <div className="mt-6 grid gap-3">
-                  <Button asChild size="lg" className="rounded-xl">
+                  <Button asChild size="lg" className="rounded-xl" disabled>
                     <a href="#" target="_blank" rel="noreferrer">
-                      Wolt (placeholder)
+                      Wolt (Hamarosan!)
                     </a>
                   </Button>
 
@@ -73,16 +73,21 @@ export default function FeaturedMenu({ items }: { items: FeaturedItem[] }) {
                     size="lg"
                     variant="outline"
                     className="rounded-xl"
+                    disabled
                   >
                     <a href="#" target="_blank" rel="noreferrer">
-                      Foodora (placeholder)
+                      Foodora (Hamarosan!)
                     </a>
                   </Button>
                 </div>
               </DialogContent>
             </Dialog>
 
-            <Button asChild size="lg" className="h-12 rounded-2xl cursor-pointer">
+            <Button
+              asChild
+              size="lg"
+              className="h-12 rounded-2xl cursor-pointer"
+            >
               <Link href="/menu">Teljes menü</Link>
             </Button>
           </div>
@@ -90,16 +95,16 @@ export default function FeaturedMenu({ items }: { items: FeaturedItem[] }) {
 
         <div
           data-anim="grid"
-          className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 items-stretch"
         >
           {items.map((item) => (
             <Link
               key={item.name}
               href="/menu"
-              className="block"
+              className="block h-full"
               aria-label={`${item.name} megnyitása a menüben`}
             >
-              <div data-anim="card">
+              <div data-anim="card" className="h-full">
                 <MenuCard item={toMenuItem(item)} />
               </div>
             </Link>

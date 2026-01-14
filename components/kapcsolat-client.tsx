@@ -13,7 +13,7 @@ const PLACE = {
   phone: "+36 70 590 9421",
   email: "info@jungleburger.hu",
   address: "1165 Budapest, Bökényföldi út 6",
-  hours: "H–V 11:00–20:00",
+  hours: "H–V 11:30–20:00",
   mapQuery: "1165 Budapest Bökényföldi út 6",
 };
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ALLERGENS } from "@/lib/constants";
 
-export default function AllergensSection({ imageSrc = "/burger-image.jpg" }: { imageSrc?: string }) {
+export default function AllergensSection({ imageSrc = "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/kecsketal%20%E2%80%93%20nagy.jpeg" }: { imageSrc?: string }) {
   return (
     <section className="mx-auto w-full max-w-6xl px-4 sm:px-6">
       <div className="mt-8 overflow-hidden rounded-3xl border border-border bg-card/60 text-card-foreground backdrop-blur">

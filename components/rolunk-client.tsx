@@ -10,46 +10,52 @@ export default function AboutPageContent() {
     <section className="mx-auto w-full max-w-6xl px-4 pt-8 sm:px-6">
       <div className="mb-6">
         <h1 className="text-3xl font-semibold tracking-tight">Rólunk</h1>
-        <p className="mt-2 text-sm text-muted-foreground">
-          Jungle Burger = nagy ízek, letisztult menü, erős vizuál. A cél: gyors döntés, jó élmény, semmi túlbonyolítás.
-        </p>
+       
       </div>
 
-      <div className="grid gap-6 lg:grid-cols-2">
+      <div className="grid gap-6">
         {/* TEXT */}
         <Card className="rounded-3xl border-3 bg-card">
           <CardHeader>
-            <CardTitle className="text-base">A koncepció</CardTitle>
+            <CardTitle className="text-base">A Jungle Burger sztorija</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-3 text-sm text-muted-foreground">
-            <p>
-              Smash, crispy chicken, veggie — pár signature kedvenc, amik gyorsan választást adnak. Nincs zaj, csak
-              lényeg.
-            </p>
-            <p>
-              A Jungle vibe: friss, modern, kicsit merész. Brand-szín dominál, a tartalom pedig tiszta, fehér kártyákon
-              ül — pont ezért “premium”.
-            </p>
-            <p className="text-xs">
-              *Ez placeholder szöveg — írok hozzá “valódi” verziót is, ha megírod a sztorit (mióta, hol, mi a special).
-            </p>
-          </CardContent>
+         <CardContent className="space-y-4 text-sm text-muted-foreground">
+  <p>
+    A Jungle Burger egy baráti beszélgetésből született – meg persze abból,
+    hogy egyszerűen imádjuk a jó hamburgereket.
+    Először csak egy ötlet volt, aztán jött egy lehetőség,
+    amire nem lehetett nemet mondani.
+  </p>
+
+  <p>
+    Egy olyan helyet szerettünk volna létrehozni,
+    ami laza, hangulatos, mégis mindenki számára otthonos.
+    Ahol jó leülni, jó enni,
+    és ahová szívesen visszatérsz.
+    Legyen szó egy gyors ebédről vagy egy baráti összejövetelről,
+    a Jungleben mindig lesz helyed.
+  </p>
+
+  <p>
+    A dzsungel törvénye nálunk is érvényes:
+    friss alapanyagok, vad ízek
+    és laktató burgerek uralják a tálat.
+    Nincs túlbonyolítás —
+    minden falatban ott az igazi dzsungelélmény.
+  </p>
+
+  <p className="pt-2 font-medium text-foreground">
+    A Jungle Burger egy érzés.
+    Laza, vagány,
+    és olyan, hogy amikor elmész,
+    már azon gondolkodsz, mikor jössz vissza.
+  </p>
+</CardContent>
+
         </Card>
 
         {/* IMAGES */}
-        <div className="grid gap-6">
-          <Card className="overflow-hidden rounded-3xl border-3 bg-card">
-            <div className="relative h-56 w-full">
-              <Image src="/burger-image.jpg" alt="Jungle Burger kép 1" fill className="object-cover" />
-            </div>
-          </Card>
-
-          <Card className="overflow-hidden rounded-3xl border-3 bg-card">
-            <div className="relative h-56 w-full">
-              <Image src="/heropl.jpg" alt="Jungle Burger kép 2" fill className="object-cover" />
-            </div>
-          </Card>
-        </div>
+       
       </div>
 
       {/* MAP */}

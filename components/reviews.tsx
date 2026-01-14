@@ -14,13 +14,14 @@ export default function ReviewsSection({ reviews }: { reviews: Review[] }) {
               <span className="text-[var(--jungle)]">Csak működik.</span>
             </h3>
             <p className="mt-3 text-sm text-muted-foreground">
-              A koncepció: nagy ízek, modern megjelenés, gyors döntés. Ez a site egy clean landing — menü + vibe + infó.
-            </p>
+ A vendégeink szerint a Jungle Burger pontosan az, aminek látszik.
+  Jó ízek, korrekt adagok, laza hangulat.
+  Beülsz, választasz, eszel — és legközelebb is visszajössz.            </p>
 
             <div className="mt-6 grid gap-3">
               <div className="rounded-3xl border border-border bg-card/70 p-4 backdrop-blur">
                 <div className="flex items-center gap-2 text-sm font-semibold">
-                  <span className="text-[var(--jungle)]">★</span> 4.8/5 (placeholder)
+                  <span className="text-[var(--jungle)]">★</span> 4.8/5 
                 </div>
                 <div className="mt-1 text-xs text-muted-foreground">értékelés a vendégektől</div>
               </div>
@@ -41,9 +42,7 @@ export default function ReviewsSection({ reviews }: { reviews: Review[] }) {
               >
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-base">
-                    <span className="grid h-8 w-8 place-items-center rounded-2xl bg-white/20 text-sm font-bold text-foreground">
-                      {r.name.slice(0, 1)}
-                    </span>
+                    
                     {r.name}
                   </CardTitle>
                 </CardHeader>
@@ -51,7 +50,7 @@ export default function ReviewsSection({ reviews }: { reviews: Review[] }) {
                   “{r.text}”
                   <div className="mt-4 flex gap-1">
                     {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} className="h-4 w-4 text-[var(--jungle)]" />
+                      <Star key={i} className="h-4 w-4 text-(--jungle) fill-(--jungle)" />
                     ))}
                   </div>
                 </CardContent>

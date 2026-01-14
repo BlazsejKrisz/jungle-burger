@@ -53,13 +53,14 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
             Jungle Burger.
             <br />
             <span className="text-[var(--jungle)] text-4xl md:text-6xl">
-              Nagy ízek, tiszta döntés.
+             Itt a dzsungel ízei az urak
             </span>
           </h1>
 
           <p data-anim="hero-sub" className="mt-4 max-w-xl text-sm text-white/80">
-            3 best-sellerrel kezdünk: smash, crispy chicken, veggie. Letisztult
-            menü, erős vizuál — egy landing, ami azonnal “premium”-nek hat.
+           Smash burger, classic burger, crispy chicken, veggie — pár bevált kedvenc,
+  amit jó választani és még jobb megenni. 
+  Nincs túlbonyolítva. Csak az, ami működik. Budapesten
           </p>
 
           {/* SOCIALS */}
@@ -119,9 +120,9 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
                 </p>
 
                 <div className="mt-6 grid gap-3">
-                  <Button asChild size="lg" className="rounded-xl">
+                  <Button asChild size="lg" className="rounded-xl" disabled>
                     <a href="#" target="_blank" rel="noreferrer">
-                      Wolt (placeholder)
+                      Wolt (Hamarosan!)
                     </a>
                   </Button>
 
@@ -130,9 +131,10 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
                     size="lg"
                     variant="outline"
                     className="rounded-xl"
+                    disabled
                   >
                     <a href="#" target="_blank" rel="noreferrer">
-                      Foodora (placeholder)
+                      Foodora (Hamarosan!)
                     </a>
                   </Button>
                 </div>
@@ -150,7 +152,7 @@ export default function Hero({ bgSrc = "/heropl.jpg" }: { bgSrc?: string }) {
                 <Clock3 className="h-4 w-4 shrink-0" />
                 <span className="truncate">Nyitvatartás</span>
               </div>
-              <div className="mt-1 text-xs truncate">H–V 11:00–20:00</div>
+              <div className="mt-1 text-xs truncate">H–V 11:30–20:00</div>
             </div>
 
             <div className="min-w-0 rounded-3xl bg-[var(--jungle)] p-4 text-white">

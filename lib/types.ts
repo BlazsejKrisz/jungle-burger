@@ -35,7 +35,7 @@ export type MenuItem = {
   price: number;
   tag?: string;
   badge?: string;
-  imageSrc: string;
+  imageSrc?: string;
 
   allergens?: AllergenKey[]; // ✅ add this
 };
