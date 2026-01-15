@@ -312,7 +312,7 @@ export const MENU_GROUPS: MenuGroup[] = [
         title: "KÖRETEK",
         items: [
           { name: "Hasábburgonya", desc: "", price: 1090, imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/hasabburgonya%20%E2%80%93%20nagy.jpeg", allergens: [] },
-          { name: "Édesburgonya", desc: "", price: 1390, imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/edesburgonya%20%E2%80%93%20nagy.jpeg", allergens: [] },
+          { name: "Édesburgonya", desc: "", price: 1390, imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/IMG_9236%20%E2%80%93%20nagy.jpeg", allergens: [] },
           { name: "Káposztasaláta", desc: "", price: 890, imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/kapsali%20%E2%80%93%20nagy.jpeg", allergens: ["egg", "mustard"] },
           { name: "Uborkasaláta", desc: "", price: 690, imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/ubisali%20%E2%80%93%20nagy.jpeg", allergens: [] },
           {

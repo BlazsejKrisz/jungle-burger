@@ -32,9 +32,7 @@ export default function FeaturedMenu({ items }: { items: FeaturedItem[] }) {
             <h2 className="text-2xl font-semibold tracking-tight">
               Menü kedvencek
             </h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              3 best-seller — letisztult kártyák, erős vizuál.
-            </p>
+            
           </div>
 
           {/* ACTIONS */}

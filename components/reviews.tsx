@@ -27,8 +27,8 @@ export default function ReviewsSection({ reviews }: { reviews: Review[] }) {
               </div>
 
               <div className="rounded-3xl border border-border bg-card/70 p-4 backdrop-blur">
-                <div className="text-sm font-semibold">Allergének átláthatóan</div>
-                <div className="mt-1 text-xs text-muted-foreground">ikonokkal jelölve — gyorsan képben vagy</div>
+                <div className="text-sm font-semibold">Gyere és próbáld ki te is!</div>
+                <div className="mt-1 text-xs text-muted-foreground">Nem fogsz csalódni!</div>
               </div>
             </div>
           </div>
