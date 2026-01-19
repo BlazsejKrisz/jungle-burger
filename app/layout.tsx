@@ -38,9 +38,9 @@ export default function RootLayout({
           enableSystem={false}
           
         >
-          {/* <Navbar navLeft={NAV_LEFT} navRight={NAV_RIGHT} /> */}
+          <Navbar navLeft={NAV_LEFT} navRight={NAV_RIGHT} />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
