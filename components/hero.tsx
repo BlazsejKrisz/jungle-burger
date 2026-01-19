@@ -56,14 +56,14 @@ export default function Hero({ bgSrc = "https://aehgjym3dpgi0paj.public.blob.ver
             </span>
           </h1>
 
-          <p
+          {/* <p
             data-anim="hero-sub"
             className="mt-4 max-w-xl text-sm leading-relaxed text-white/80"
           >
             Smash burger, classic burger, crispy chicken, veggie — pár bevált
             kedvenc, amit jó választani és még jobb megenni. Nincs túlbonyolítva.
             Csak az, ami működik. Budapesten.
-          </p>
+          </p> */}
 
           {/* SOCIALS */}
           <div
@@ -76,7 +76,7 @@ export default function Hero({ bgSrc = "https://aehgjym3dpgi0paj.public.blob.ver
               className="transition hover:text-[var(--jungle)]"
               target="_blank"
             >
-              <Instagram className="h-5 w-5" />
+              <Instagram className="h-7 w-7" />
             </a>
             <a
               href="https://www.facebook.com/share/1C2FoSdBR1/?mibextid=wwXIfr"
@@ -84,7 +84,7 @@ export default function Hero({ bgSrc = "https://aehgjym3dpgi0paj.public.blob.ver
               className="transition hover:text-[var(--jungle)]"
               target="_blank"
             >
-              <Facebook className="h-5 w-5" />
+              <Facebook className="h-7 w-7" />
             </a>
           </div>
 

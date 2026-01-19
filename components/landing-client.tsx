@@ -115,7 +115,7 @@ export default function LandingClient() {
 
       {/* <Separator className="border-[var(--jungle)]/20" /> */}
 
-      <Reviews reviews={reviews} />
+      {/* <Reviews reviews={reviews} /> */}
 
       {/* <Separator className="border-[var(--jungle)]/20" /> */}
 
