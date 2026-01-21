@@ -18,16 +18,20 @@ export type NavItem = {
 };
 
 export type AllergenKey =
-  | "gluten"
-  | "milk"
-  | "egg"
-  | "peanut"
-  | "nuts"
-  | "soy"
-  | "fish"
-  | "mustard"
-  | "celery"
-  | "sesame";
+  | "gluten"      // 1
+  | "crustaceans" // 2
+  | "egg"         // 3
+  | "fish"        // 4
+  | "peanut"      // 5
+  | "soy"         // 6
+  | "milk"        // 7
+  | "nuts"        // 8
+  | "celery"      // 9
+  | "mustard"     // 10
+  | "sesame"      // 11
+  | "sulphites"   // 12
+  | "lupin"       // 13
+  | "molluscs";   // 14
 
 export type MenuItem = {
   name: string;

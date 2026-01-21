@@ -12,6 +12,9 @@ import {
   Salad,
   Leaf,
   Flower2,
+  Shell,
+  AlertTriangle,
+  Sprout,
 } from "lucide-react";
 
 /* ---------------------------------
@@ -38,21 +41,24 @@ export const FEATURED: FeaturedItem[] = [
     desc: "Dupla smash marha, cheddar, jungle szósz.",
     price: 3390,
     tag: "Signature",
-    imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglesmash%20%E2%80%93%20nagy.jpeg",
+    imageSrc:
+      "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglesmash%20%E2%80%93%20nagy.jpeg",
   },
   {
     name: "Cheese’Bacon Fries",
     desc: "Hasábburgonya, sajtszósz, bacon chips",
     price: 1690,
     tag: "Loaded",
-    imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/cheesefries%20%E2%80%93%20nagy.jpeg",
+    imageSrc:
+      "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/cheesefries%20%E2%80%93%20nagy.jpeg",
   },
   {
     name: "Jungle Marha Tál",
     desc: "Salátakeverék, marhahús, cheddar, édesburgonya",
     price: 3690,
     tag: "Tál",
-    imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/marhatal%20%E2%80%93%20nagy.jpeg",
+    imageSrc:
+      "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/marhatal%20%E2%80%93%20nagy.jpeg",
   },
 ];
 
@@ -89,13 +95,22 @@ export type MenuGroup = {
 
 /* ---------------------------------
    MENU DATA (FULL)
+   Updated allergens per your 1–14 list:
+   - Burgers + Smash: 1,3,7,10,11
+   - Bowls: 3,7,10,11
+   - Strips: 1,3,7,11
+   - Coleslaw: 3,10
+   - Cheese’Bacon Fries: 7
+   - BBQ’Smoked Fries: 10
+   - Jungle sauce: 3,7,10
+   - Mustard sauce: 10
+   - Cheese sauce: 7
+   - BBQ sauce: 10
 ---------------------------------- */
 
 export const MENU_GROUPS: MenuGroup[] = [
   /* ===============================
      BURGEREK
-     - Classic + Smash
-     - Extras at bottom as stylish plain text
   =============================== */
   {
     id: "burgerek",
@@ -111,43 +126,49 @@ export const MENU_GROUPS: MenuGroup[] = [
             name: "Jungle Classic",
             desc: "Jungle szósz, saláta, paradicsom, marhahús, cheddar",
             price: 2990,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/jungleclassic%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/jungleclassic%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "mustard", "sesame"],
           },
           {
             name: "Chili Chimp 🌶️",
             desc: "Pikáns majonéz, saláta, paradicsom, marhahús, csípős pirított kolbászchips, jalapeno, füstölt sajt",
             price: 3390,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/chilichimp%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/chilichimp%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "mustard", "sesame"],
           },
           {
             name: "Jungle Double",
             desc: "Jungle szósz, saláta, paradicsom, dupla marhahús, dupla bacon, dupla cheddar",
             price: 4090,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/jungledouble%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/jungledouble%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "mustard", "sesame"],
           },
           {
             name: "BBQ Panther",
             desc: "BBQ szósz, sajtszósz, paradicsom, lilahagyma, marhahús, bacon, füstölt sajt",
             price: 3590,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/bbqpanther%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/bbqpanther%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "mustard", "sesame"],
           },
           {
             name: "Jungle Vega",
             desc: "Jungle szósz, saláta, paradicsom, grillezett kecskesajt, csemegeuborka",
             price: 3690,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglevega%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglevega%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "mustard", "sesame"],
           },
           {
             name: "Zöld Mamba",
             desc: "Zöldfűszeres majonéz, saláta, paradicsom, rántott csirkemell csíkok, csemegeuborka",
             price: 3390,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/zoldmamba%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "egg", "milk", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/zoldmamba%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "mustard", "sesame"],
           },
         ],
       },
@@ -161,29 +182,33 @@ export const MENU_GROUPS: MenuGroup[] = [
             desc: "Jungle szósz, paradicsom, dupla smash marhahús, dupla cheddar, grill mozzarella, csemegeuborka",
             price: 3390,
             badge: "Signature",
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglesmash%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglesmash%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "mustard", "sesame"],
           },
           {
             name: "Cheddar Smash 🌶️",
             desc: "Cheddar szósz, paradicsom, dupla smash marhahús, bacon, dupla cheddar, pirított hagyma, jalapeno",
             price: 3490,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/cheddarsmash%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/cheddarsmash%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "mustard", "sesame"],
           },
           {
             name: "Sárga Mamba Smash",
             desc: "Currys majonéz, paradicsom, lilahagyma, dupla smash marhahús, bacon, dupla cheddar, rántott camembert",
             price: 3590,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/sargamambasmash%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/sargamambasmash%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "mustard", "sesame"],
           },
           {
             name: "Classic Smash",
             desc: "Ketchup-mustár, lilahagyma, dupla smash marhahús, dupla cheddar, csemegeuborka",
             price: 2690,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/classicsmash%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/classicsmash%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "mustard", "sesame"],
           },
         ],
       },
@@ -220,15 +245,17 @@ export const MENU_GROUPS: MenuGroup[] = [
             name: "Jungle Marha Tál",
             desc: "Jungle szósz, salátakeverék, marhahús, cheddarral, édesburgonya",
             price: 3690,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/marhatal%20%E2%80%93%20nagy.jpeg",
-            allergens: ["milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/marhatal%20%E2%80%93%20nagy.jpeg",
+            allergens: ["egg", "milk", "mustard", "sesame"],
           },
           {
             name: "Jungle Vega Tál",
             desc: "Jungle szósz, salátakeverék, 2 grillezett kecskesajt, édesburgonya",
             price: 3890,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/kecsketal%20%E2%80%93%20nagy.jpeg",
-            allergens: ["milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/kecsketal%20%E2%80%93%20nagy.jpeg",
+            allergens: ["egg", "milk", "mustard", "sesame"],
           },
         ],
       },
@@ -237,6 +264,8 @@ export const MENU_GROUPS: MenuGroup[] = [
 
   /* ===============================
      HOTDOG
+     (You did not provide allergen numbers for hotdogs, so keeping your previous keys.)
+     If you want hotdogs aligned to the 1–14 list too, send the numbers and I’ll update.
   =============================== */
   {
     id: "hotdog",
@@ -250,14 +279,18 @@ export const MENU_GROUPS: MenuGroup[] = [
             name: "Jungle Dog",
             desc: "Marhahús, hotdog kifli, ketchup-mustár, cheddar, pirított hagyma, csemegeuborka",
             price: 2390,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/jungledog%20%E2%80%93%20nagy.jpeg",
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/jungledog%20%E2%80%93%20nagy.jpeg",
+            // kept as-is (not provided in your allergen list dump)
             allergens: ["gluten", "milk", "egg", "mustard"],
           },
           {
             name: "Normál Hotdog",
             desc: "Virsli, hotdog kifli, választható 2 szósz, választható 1 feltét",
             price: 1990,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/normalhotdog%20%E2%80%93%20nagy.jpeg",
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/normalhotdog%20%E2%80%93%20nagy.jpeg",
+            // kept as-is (not provided in your allergen list dump)
             allergens: ["gluten", "egg", "mustard"],
           },
         ],
@@ -287,14 +320,24 @@ export const MENU_GROUPS: MenuGroup[] = [
         id: "sauces",
         title: "SZÓSZOK",
         items: [
-          { name: "Jungle szósz", desc: "", price: 300, allergens: ["egg", "mustard"] },
-          { name: "Curry majonéz", desc: "", price: 300, allergens: ["egg", "mustard"] },
+          // Jungle szósz → 3,7,10
+          { name: "Jungle szósz", desc: "", price: 300, allergens: ["egg", "milk", "mustard"] },
+          // (not provided in your list; leaving as-is)
+          { name: "Curry majonéz", desc: "", price: 300, allergens: ["egg",] },
+          // Sajtszósz → 7
           { name: "Sajtszósz", desc: "", price: 300, allergens: ["milk"] },
-          { name: "Pikáns majonéz", desc: "", price: 300, allergens: ["egg", "mustard"] },
+          // (not provided in your list; leaving as-is)
+          { name: "Pikáns majonéz", desc: "", price: 300, allergens: ["egg"] },
+          // Chiliszósz → –
           { name: "Chili szósz", desc: "", price: 300, allergens: [] },
+          // Ketchup → –
           { name: "Ketchup", desc: "", price: 300, allergens: [] },
-          { name: "BBQ szósz", desc: "", price: 300, allergens: [] },
-          { name: "Zöldfűszeres majonéz", desc: "", price: 300, allergens: ["egg", "mustard"] },
+          // BBQ szósz → 10
+          { name: "BBQ szósz", desc: "", price: 300, allergens: ["mustard"] },
+          // (not provided in your list; leaving as-is)
+          { name: "Zöldfűszeres majonéz", desc: "", price: 300, allergens: ["egg"] },
+          // Mustár → 10 (if you list it as a sauce item)
+          { name: "Mustár", desc: "", price: 300, allergens: ["mustard"] },
         ],
       },
     ],
@@ -311,16 +354,50 @@ export const MENU_GROUPS: MenuGroup[] = [
         id: "sides",
         title: "KÖRETEK",
         items: [
-          { name: "Hasábburgonya", desc: "", price: 1090, imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/hasabburgonya%20%E2%80%93%20nagy.jpeg", allergens: [] },
-          { name: "Édesburgonya", desc: "", price: 1390, imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/IMG_9236%20%E2%80%93%20nagy.jpeg", allergens: [] },
-          { name: "Káposztasaláta", desc: "", price: 890, imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/kapsali%20%E2%80%93%20nagy.jpeg", allergens: ["egg", "mustard"] },
-          { name: "Uborkasaláta", desc: "", price: 690, imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/ubisali%20%E2%80%93%20nagy.jpeg", allergens: [] },
+          // Hasábburgonya → –
+          {
+            name: "Hasábburgonya",
+            desc: "",
+            price: 1090,
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/hasabburgonya%20%E2%80%93%20nagy.jpeg",
+            allergens: [],
+          },
+          // Édesburgonya → –
+          {
+            name: "Édesburgonya",
+            desc: "",
+            price: 1390,
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/IMG_9236%20%E2%80%93%20nagy.jpeg",
+            allergens: [],
+          },
+          // Amerikai káposztasaláta → 3,10
+          {
+            name: "Amerikai káposztasaláta",
+            desc: "",
+            price: 890,
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/kapsali%20%E2%80%93%20nagy.jpeg",
+            allergens: ["egg", "mustard"],
+          },
+          // Uborkasaláta → –
+          {
+            name: "Uborkasaláta",
+            desc: "",
+            price: 690,
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/ubisali%20%E2%80%93%20nagy.jpeg",
+            allergens: [],
+          },
+          // Jungle Strips → 1,3,7,11
           {
             name: "Jungle Strips",
             desc: "3db csirkecsík + 1 választható szósz",
             price: 1690,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglestrips%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "egg"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/junglestrips%20%E2%80%93%20nagy.jpeg",
+            allergens: ["gluten", "egg", "milk", "sesame"],
           },
         ],
       },
@@ -328,19 +405,23 @@ export const MENU_GROUPS: MenuGroup[] = [
         id: "loaded-fries",
         title: "LOADED FRIES",
         items: [
+          // Cheese’Bacon Fries → 7
           {
             name: "Cheese’Bacon Fries",
             desc: "Hasábburgonya, sajtszósz, bacon chips",
             price: 1690,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/cheesefries%20%E2%80%93%20nagy.jpeg",
-            allergens: ["milk", "egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/cheesefries%20%E2%80%93%20nagy.jpeg",
+            allergens: ["milk"],
           },
+          // BBQ’Smoked Fries → 10
           {
             name: "BBQ’Smoked Fries",
             desc: "Hasábburgonya, BBQ szósz, kolbász chips",
             price: 1690,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/bbqfries%20%E2%80%93%20nagy.jpeg",
-            allergens: ["egg", "mustard"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/bbqfries%20%E2%80%93%20nagy.jpeg",
+            allergens: ["mustard"],
           },
         ],
       },
@@ -349,6 +430,7 @@ export const MENU_GROUPS: MenuGroup[] = [
 
   /* ===============================
      DESSZERT
+     (No allergen numbers provided for churros; keeping existing keys.)
   =============================== */
   {
     id: "desszert",
@@ -362,8 +444,10 @@ export const MENU_GROUPS: MenuGroup[] = [
             name: "Churros",
             desc: "6 db churros, csokoládé szósszal",
             price: 1490,
-            imageSrc: "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/churros%20%E2%80%93%20nagy.jpeg",
-            allergens: ["gluten", "egg", "milk"],
+            imageSrc:
+              "https://aehgjym3dpgi0paj.public.blob.vercel-storage.com/churros%20%E2%80%93%20nagy.jpeg",
+            // kept as-is (not in your allergen dump)
+            allergens: ["gluten"],
           },
         ],
       },
@@ -391,18 +475,22 @@ export const MENU_GROUPS: MenuGroup[] = [
 ];
 
 /* ---------------------------------
-   ALLERGENS
+   ALLERGENS (HU 1–14)
 ---------------------------------- */
 
-export const ALLERGENS: Record<AllergenKey, { label: string; Icon: any }> = {
-  gluten: { label: "Glutént tartalmazó gabonafélék", Icon: Wheat },
-  milk: { label: "Tej és abból készült ételek", Icon: Milk },
-  egg: { label: "Tojás és abból készült ételek", Icon: Egg },
-  peanut: { label: "Földimogyoró", Icon: Pen },
-  nuts: { label: "Diófélék", Icon: Nut },
-  soy: { label: "Szójabab", Icon: Bean },
-  fish: { label: "Hal", Icon: Fish },
-  mustard: { label: "Mustár", Icon: Salad },
-  celery: { label: "Zeller", Icon: Leaf },
-  sesame: { label: "Szezámmag", Icon: Flower2 },
+export const ALLERGENS: Record<AllergenKey, { label: string; Icon: any; code: number }> = {
+  gluten: { code: 1, label: "Glutént tartalmazó gabonafélék", Icon: Wheat },
+  crustaceans: { code: 2, label: "Rákfélék", Icon: Shell },
+  egg: { code: 3, label: "Tojás", Icon: Egg },
+  fish: { code: 4, label: "Hal", Icon: Fish },
+  peanut: { code: 5, label: "Földimogyoró", Icon: Pen },
+  soy: { code: 6, label: "Szójabab", Icon: Bean },
+  milk: { code: 7, label: "Tej (beleértve a laktózt is)", Icon: Milk },
+  nuts: { code: 8, label: "Diófélék", Icon: Nut },
+  celery: { code: 9, label: "Zeller", Icon: Leaf },
+  mustard: { code: 10, label: "Mustár", Icon: Salad },
+  sesame: { code: 11, label: "Szezámmag", Icon: Flower2 },
+  sulphites: { code: 12, label: "Kén-dioxid és szulfitok", Icon: AlertTriangle },
+  lupin: { code: 13, label: "Csillagfürt (lupin)", Icon: Sprout },
+  molluscs: { code: 14, label: "Puhatestűek", Icon: Shell },
 };
