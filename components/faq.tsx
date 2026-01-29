@@ -135,14 +135,14 @@ export default function Faq() {
                         asChild
                         size="lg"
                         className="rounded-2xl text-base font-semibold"
-                        disabled
+                        
                       >
                         <a
-                          href="https://wolt.com"
+                          href="https://wolt.com/hu/hun/budapest/restaurant/jungle-burger"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          Wolt (Hamarosan!)
+                          Wolt
                         </a>
                       </Button>
 

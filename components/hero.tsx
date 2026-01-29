@@ -23,7 +23,7 @@ export default function Hero({ bgSrc = "https://aehgjym3dpgi0paj.public.blob.ver
   return (
     <section
       data-anim="hero"
-      className="relative min-h-[calc(100dvh-4rem)] w-full overflow-x-hidden"
+      className="relative min-h-[calc(100dvh-4rem)] w-full max-w-full overflow-hidden"
     >
       <Image
         src={bgSrc}
@@ -127,8 +127,8 @@ export default function Hero({ bgSrc = "https://aehgjym3dpgi0paj.public.blob.ver
 
                 <div className="mt-6 grid gap-3">
                   <Button asChild size="lg" className="rounded-xl" disabled>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      Wolt (Hamarosan!)
+                    <a href="https://wolt.com/hu/hun/budapest/restaurant/jungle-burger" target="_blank" rel="noreferrer">
+                      Wolt
                     </a>
                   </Button>
 

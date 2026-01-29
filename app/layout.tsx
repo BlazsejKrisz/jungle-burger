@@ -31,17 +31,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="hu" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-          
-        >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased w-full max-w-full overflow-x-hidden`}>
           <Navbar navLeft={NAV_LEFT} navRight={NAV_RIGHT} />
           {children}
           <Footer />
-        </ThemeProvider>
       </body>
     </html>
   );

@@ -60,9 +60,9 @@ export default function FeaturedMenu({ items }: { items: FeaturedItem[] }) {
                 </p>
 
                 <div className="mt-6 grid gap-3">
-                  <Button asChild size="lg" className="rounded-xl" disabled>
-                    <a href="#" target="_blank" rel="noreferrer">
-                      Wolt (Hamarosan!)
+                  <Button asChild size="lg" className="rounded-xl" >
+                    <a href="https://wolt.com/hu/hun/budapest/restaurant/jungle-burger" target="_blank" rel="noreferrer">
+                      Wolt 
                     </a>
                   </Button>
 
